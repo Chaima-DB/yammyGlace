@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="273.0" style="-fx-background-color: #f2f2bc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="happyglace.SideBarController">
+   <children>
+      <AnchorPane prefHeight="140.0" prefWidth="275.0" style="-fx-background-color: #ffd861;">
+         <children>
+            <Circle layoutX="18.0" layoutY="50.0" radius="90.0" stroke="#ffd861" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.580952380952381">
+                     <stops>
+                        <Stop color="#b0674d" />
+                        <Stop color="#f5cb4c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="122.0" layoutY="50.0" radius="69.0" stroke="#ffd861" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.06190476190476191" startY="0.9380952380952381">
+                     <stops>
+                        <Stop color="#b0674d" />
+                        <Stop color="#faff63" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="217.0" layoutY="32.0" radius="62.0" stroke="#ffd861" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+                     <stops>
+                        <Stop color="#b0674d" />
+                        <Stop color="#fff7178c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="140.0" prefHeight="377.0" prefWidth="279.0" style="-fx-background-color: #ffb870;">
+         <children>
+            <VBox layoutX="31.0" layoutY="45.0" prefHeight="271.0" prefWidth="217.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="31.0" prefWidth="215.0" text="Gestion des commandes :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.9047619047619048" endY="0.38095238095238093" startX="0.09523809523809523" startY="0.8666666666666667">
+                           <stops>
+                              <Stop color="#9e5981" />
+                              <Stop color="#d7ab2a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: #ffe7e7;" text="Toutes Les Commandes">
+                     <textFill>
+                        <LinearGradient endX="0.9047619047619048" endY="0.38095238095238093" startX="0.09523809523809523" startY="0.8666666666666667">
+                           <stops>
+                              <Stop color="#9e5981" />
+                              <Stop color="#d7ab2a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                           <image>
+                              <Image url="@../happyGlaceImages/seeAll.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: #ffe7e7;" text="Commandes En Attentes">
+                     <textFill>
+                        <LinearGradient endX="0.9047619047619048" endY="0.38095238095238093" startX="0.09523809523809523" startY="0.8666666666666667">
+                           <stops>
+                              <Stop color="#9e5981" />
+                              <Stop color="#d7ab2a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" translateX="-7.0">
+                           <image>
+                              <Image url="@../happyGlaceImages/enAttent.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: #ffe7e7;" text="Commandes En Cours ">
+                     <textFill>
+                        <LinearGradient endX="0.9047619047619048" endY="0.38095238095238093" startX="0.09523809523809523" startY="0.8666666666666667">
+                           <stops>
+                              <Stop color="#9e5981" />
+                              <Stop color="#d7ab2a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" translateX="-91.0">
+                           <image>
+                              <Image url="@../happyGlaceImages/enCours.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.0" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: #ffe7e7;" text="Commandes Servies">
+                     <textFill>
+                        <LinearGradient endX="0.9047619047619048" endY="0.38095238095238093" startX="0.09523809523809523" startY="0.8666666666666667">
+                           <stops>
+                              <Stop color="#9e5981" />
+                              <Stop color="#d7ab2a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" translateX="-91.0">
+                           <image>
+                              <Image url="@../happyGlaceImages/done.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <AnchorPane prefHeight="19.0" prefWidth="217.0" />
+                  <Label alignment="CENTER" prefHeight="31.0" prefWidth="215.0" text="Gestion des Produits :" textAlignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.9047619047619048" endY="0.38095238095238093" startX="0.09523809523809523" startY="0.8666666666666667">
+                           <stops>
+                              <Stop color="#9e5981" />
+                              <Stop color="#d7ab2a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: #ffe7e7;" text="Ajouter Produit">
+                     <textFill>
+                        <LinearGradient endX="0.9047619047619048" endY="0.38095238095238093" startX="0.09523809523809523" startY="0.8666666666666667">
+                           <stops>
+                              <Stop color="#9e5981" />
+                              <Stop color="#d7ab2a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" translateX="-91.0">
+                           <image>
+                              <Image url="@../happyGlaceImages/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: #ffe7e7;" text=" Tous Les Produits">
+                     <textFill>
+                        <LinearGradient endX="0.9047619047619048" endY="0.38095238095238093" startX="0.09523809523809523" startY="0.8666666666666667">
+                           <stops>
+                              <Stop color="#9e5981" />
+                              <Stop color="#d7ab2a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" translateX="-91.0">
+                           <image>
+                              <Image url="@../happyGlaceImages/seeAll.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

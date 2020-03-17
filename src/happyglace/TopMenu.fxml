@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="39.0" prefWidth="656.0" style="-fx-background-color: #ffd861;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="happyglace.TopMenuController">
+   <children>
+      <HBox prefHeight="54.0" prefWidth="656.0">
+         <children>
+            <ImageView fx:id="menu" fitHeight="34.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="10.0">
+               <image>
+                  <Image url="@../happyGlaceImages/menu.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="exit" fitHeight="34.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="585.0" translateY="10.0">
+               <image>
+                  <Image url="@../happyGlaceImages/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
